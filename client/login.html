@@ -1,0 +1,69 @@
+<html>
+
+    <head>
+        <title>_.essxiv</title>
+
+        <link rel="stylesheet" type="text/css" href="/dist/AppStylesMin.css" />
+        <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css" />
+
+    </head>
+
+    <body>
+
+        <div id="overlay"></div>
+
+        <section id="important">
+            <div class="login-box">
+                <div class="container-fluid no-padding">
+                    <div class="row no-padding">
+                        <div class="col-lg-4 col-md-4 col-sm-4 no-padding">
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-4 no-padding">
+
+                            <div>register</div>
+                            <div class="box-1">
+                                <form action="/register" method="POST">
+                                    
+                                    <input id="register_name_input" placeholder="Name" type="text" name="name" value="" />
+                                    <input id="register_username_input" placeholder="Username" type="text" name="username" value="" />
+                                    <input id="register_password_input" placeholder="Password" type="text" name="password" value="" />
+                                    <!-- <input id="register_password_confirmation_input" placeholder="Password Confirmation" type="text" name="password_confirmation" /> -->
+                                        <input href="/token" type="submit" value="submit" formmethod="POST" id="submit_register" name="submit" /> 
+                                </form>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-4 no-padding">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $("#submit_register").on("click", function() {
+                window.location.href = '/token';
+            })
+            // console.log("Jquery is Working...");
+
+            // console.log($('#username_input').val());
+            // console.log($('#password_input').val());
+
+            // $('#submit_input').on('click', function() {
+            //     console.log('submit clicked;');
+            // })
+
+
+        })
+
+    </script>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "universal_api",
+  "description": "stand-alone api wrapper",
+  "main": "index.js",
+  "authors": [
+    "greg hasenauer"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "api"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
